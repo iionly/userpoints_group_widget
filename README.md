@@ -1,11 +1,15 @@
-Userpoints group widget plugin for Elgg 1.9
-Latest Version: 1.9.0
-Released: 2013-09-14
-Contact: iionly@gmx.de
-License: GNU General Public License version 2
+Userpoints group widget plugin for Elgg 1.9 - 1.12 and Elgg 2.X
+===============================================================
+
+Latest Version: 1.9.1  
+Released: 2015-10-04  
+Contact: iionly@gmx.de  
+License: GNU General Public License version 2  
 Copyright: (c) iionly 2013
 
 
+Description
+-----------
 
 This plugin adds an (optional) widget to groups profile pages listing group members with most (site-wide) userpoints. It works both with and without the Widget Manager plugin.
 
@@ -14,19 +18,9 @@ This plugin does only list users of the site who are also member of the currentl
 If you would like to list the members in the group sidebar instead of within a widget take a look in start.php. Uncomment the elgg_extend_view() line and comment out the other code to disable the widgets.
 
 
-Installation:
+Installation
+------------
 
-1. copy the userpoints_group_widget plugin folder into the mod folder on your server,
-2. enable the plugin in the admin section of your site.
-
-
-
-Changelog:
-
-1.9.0:
-
-- Updated for Elgg 1.9.
-
-1.8.0:
-
-- Initial release.
+1. If you have a previous version of the Userpoints group widget plugin installed, first remove the old plugin folder from your mod directory before copying/extracting the new version to your server,
+2. Copy the userpoints_group_widget plugin folder into the mod folder on your server,
+3. Enable the plugin in the admin section of your site.
