@@ -1,8 +1,8 @@
-Userpoints group widget plugin for Elgg 1.9 - 1.12 and Elgg 2.X
-===============================================================
+Userpoints group widget plugin for Elgg 2.3 and newer Elgg 2.X
+==============================================================
 
-Latest Version: 1.9.1  
-Released: 2015-10-04  
+Latest Version: 2.3.2  
+Released: 2018-02-02  
 Contact: iionly@gmx.de  
 License: GNU General Public License version 2  
 Copyright: (c) iionly 2013

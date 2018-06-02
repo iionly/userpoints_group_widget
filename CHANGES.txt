@@ -1,6 +1,13 @@
 Changelog
 =========
 
+2.3.2
+-----
+
+- Minimum required Elgg version 2.3.0,
+- Minimum required Elggx Userpoints version 2.3.2,
+- Code rewrite.
+
 1.9.1
 -----
 
