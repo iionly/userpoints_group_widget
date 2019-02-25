@@ -3,7 +3,7 @@
 	<name>Userpoints groups widget</name>
 	<id>userpoints_group_widget</id>
 	<author>iionly</author>
-	<version>2.3.2</version>
+	<version>2.3.3</version>
 	<category>enhancement</category>
 	<description>Adds an (optional) widget to groups profile pages listing group members with most userpoints.</description>
 	<website>https://github.com/iionly</website>

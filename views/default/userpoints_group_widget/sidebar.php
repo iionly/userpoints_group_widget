@@ -10,7 +10,7 @@ $entities = elgg_get_entities_from_relationship([
 	'inverse_relationship' => true,
 	'order_by_metadata' =>  [
 		'name' => 'userpoints_points',
-		'direction' => DESC,
+		'direction' => 'DESC',
 		'as' => 'integer',
 	],
 	'metadata_name_value_pairs' => [
