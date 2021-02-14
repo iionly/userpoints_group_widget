@@ -4,18 +4,16 @@
  *
  */
 
-// get widget settings
-$count = sanitise_int($vars["entity"]->userpoints_group_widget_count, false);
-if(empty($count)){
-	$count = 5;
-}
+$widget = elgg_extract('entity', $vars);
+
+$limit = (int) $widget->userpoints_group_widget_count ?: 4;
 
 $prev_context = elgg_get_context();
 elgg_set_context('groups');
 
-$content = elgg_list_entities_from_relationship([
+$content = elgg_list_entities([
 	'type' => 'user',
-	'limit' => $count,
+	'limit' => $limit,
 	'relationship' => 'member',
 	'relationship_guid' => elgg_get_page_owner_guid(),
 	'inverse_relationship' => true,

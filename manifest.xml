@@ -3,7 +3,7 @@
 	<name>Userpoints groups widget</name>
 	<id>userpoints_group_widget</id>
 	<author>iionly</author>
-	<version>2.3.3</version>
+	<version>3.0.0</version>
 	<category>enhancement</category>
 	<description>Adds an (optional) widget to groups profile pages listing group members with most userpoints.</description>
 	<website>https://github.com/iionly</website>
@@ -11,12 +11,12 @@
 	<license>GNU Public License version 2</license>
 	<requires>
 		<type>elgg_release</type>
-		<version>2.3.0</version>
+		<version>3.0.0</version>
 	</requires>
 	<requires>
 		<type>plugin</type>
 		<name>elggx_userpoints</name>
-		<version>2.3.2</version>
+		<version>3.0.0</version>
 	</requires>
 	<suggests>
 		<type>plugin</type>

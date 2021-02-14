@@ -3,17 +3,20 @@
  * Userpoints group module
  */
 
-$group = elgg_get_page_owner_entity();
-
-if ($group->userpoints_group_widget_enable == "no") {
-	return true;
+$group = elgg_extract('entity', $vars);
+if (!($group instanceof \ElggGroup)) {
+	return;
 }
 
-$limit = 5;
+if (!$group->isToolEnabled('userpoints_group_widget')) {
+	return;
+} 
+
+$limit = 4;
 
 elgg_push_context('widgets');
 
-$content = elgg_list_entities_from_relationship([
+$content = elgg_list_entities([
 	'type' => 'user',
 	'limit' => $limit,
 	'relationship' => 'member',

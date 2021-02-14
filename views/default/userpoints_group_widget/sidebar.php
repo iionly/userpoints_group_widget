@@ -1,8 +1,8 @@
 <?php
 
-$limit = 5;
+$limit = 4;
 
-$entities = elgg_get_entities_from_relationship([
+$entities = elgg_get_entities([
 	'type' => 'user',
 	'limit' => $limit,
 	'relationship' => 'member',
@@ -24,21 +24,11 @@ $entities = elgg_get_entities_from_relationship([
 
 $html = '';
 
-?>
+foreach ($entities as $entity) {
+	$icon = elgg_view_entity_icon($entity, 'tiny');
+	$branding = (abs($entity->userpoints_points) > 1) ? elgg_echo('elggx_userpoints:lowerplural') : elgg_echo('elggx_userpoints:lowersingular');
+	$info = "<a href=\"{$entity->getURL()}\">{$entity->name}</a><br><b>{$entity->userpoints_points} $branding</b>";
+	$html .= elgg_view('page/components/image_block', ['image' => $icon, 'body' => $info]);
+}
 
-<div class="elgg-module elgg-module-aside">
-	<div class="elgg-head">
-		<h3><?php echo elgg_echo('userpoints_group_widget:top_group_members'); ?></h3>
-	</div>
-	<div>
-		<?php
-			foreach ($entities as $entity) {
-				$icon = elgg_view_entity_icon($entity, 'tiny');
-				$branding = (abs($entity->userpoints_points) > 1) ? elgg_echo('elggx_userpoints:lowerplural') : elgg_echo('elggx_userpoints:lowersingular');
-				$info = "<a href=\"{$entity->getURL()}\">{$entity->name}</a><br><b>{$entity->userpoints_points} $branding</b>";
-				$html .= elgg_view('page/components/image_block', array('image' => $icon, 'body' => $info));
-			}
-			echo $html;
-		?>
-	</div>
-</div>
+echo elgg_view_module('aside', elgg_echo('userpoints_group_widget:top_group_members'), $html);
