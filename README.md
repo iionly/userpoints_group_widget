@@ -1,8 +1,8 @@
-Userpoints group widget plugin for Elgg 3.0 and newer Elgg 3.X
+Userpoints Group Widget plugin for Elgg 4.0 and newer Elgg 4.X
 ==============================================================
 
-Latest Version: 3.0.0  
-Released: 2021-02-08  
+Latest Version: 4.0.0  
+Released: 2022-05-21  
 Contact: iionly@gmx.de  
 License: GNU General Public License version 2  
 Copyright: (c) iionly 2013
@@ -21,6 +21,6 @@ If you would like to list the members in the group sidebar instead of within a w
 Installation
 ------------
 
-1. If you have a previous version of the Userpoints group widget plugin installed, first remove the old plugin folder from your mod directory before copying/extracting the new version to your server,
+1. If you have a previous version of the Userpoints Group Widget plugin installed, first remove the old plugin folder from your mod directory before copying/extracting the new version to your server,
 2. Copy the userpoints_group_widget plugin folder into the mod folder on your server,
 3. Enable the plugin in the admin section of your site.

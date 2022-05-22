@@ -1,6 +1,13 @@
 Changelog
 =========
 
+4.0.0
+-----
+
+- Minimum required Elgg version 4.0.0,
+- Minimum required Elggx Userpoints version 4.0.0,
+- Updated for Elgg 4.
+
 3.0.0
 -----
 
