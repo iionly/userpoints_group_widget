@@ -1,8 +1,8 @@
-Userpoints Group Widget plugin for Elgg 4.0 and newer Elgg 4.X
+Userpoints Group Widget plugin for Elgg 4.3 and newer Elgg 4.X
 ==============================================================
 
-Latest Version: 4.0.0  
-Released: 2022-05-21  
+Latest Version: 4.3.0  
+Released: 2023-09-17  
 Contact: iionly@gmx.de  
 License: GNU General Public License version 2  
 Copyright: (c) iionly 2013
@@ -15,7 +15,7 @@ This plugin adds an (optional) widget to groups profile pages listing group memb
 
 This plugin does only list users of the site who are also member of the currently viewed group. This plugin does NOT list the members based on userpoints they gained for actions within the corresponding group but lists them based on their total number of userpoints.
 
-If you would like to list the members in the group sidebar instead of within a widget take a look in start.php. Uncomment the elgg_extend_view() line and comment out the other code to disable the widgets.
+If you would like to list the members in the group sidebar instead of within a widget take a look in elgg-plugin.php. Uncomment the "view_extensions" lines and comment out the "widgets" and "group_tools" code to disable the widgets.
 
 
 Installation

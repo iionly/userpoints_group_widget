@@ -22,10 +22,11 @@ $content = elgg_list_entities([
 	'relationship' => 'member',
 	'relationship_guid' => $group->guid,
 	'inverse_relationship' => true,
-	'order_by_metadata' =>  [
-		'name' => 'userpoints_points',
+	'sort_by' => [
+		'property' => 'userpoints_points',
 		'direction' => 'DESC',
-		'as' => 'integer',
+		'signed' => true,
+		'property_type' => 'metadata',
 	],
 	'metadata_name_value_pairs' => [
 		[

@@ -22,7 +22,7 @@
         "composer/installers": ">=1.0.8"
     },
     "conflict": {
-        "elgg/elgg": "<4.0"
+        "elgg/elgg": "<4.3"
     },
     "suggest": {
         "coldtrick/widget_manager": "With the Widget Manager plugin available the Userpoints Group Widget plugin offers a widget for the group profile pages listing group members with most userpoints."
